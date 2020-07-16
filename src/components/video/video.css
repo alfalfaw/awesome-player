@@ -1,0 +1,106 @@
+.video {
+  position: relative;
+  overflow: hidden;
+}
+.video-content {
+  width: 100%;
+  height: 100%;
+  /* 进行等比填充 */
+  object-fit: cover;
+}
+.video-controls {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+
+.video-controls > div {
+  margin-bottom: 10px;
+}
+.video-progress {
+  position: relative;
+  height: 5px;
+  width: 100%;
+  background: #222223;
+}
+.video-progress-now {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: #ff6a03;
+  z-index: 1;
+}
+.video-progress-suc {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: #666;
+}
+.video-progress-bar {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.video-play {
+  color: white;
+  float: left;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.video-time {
+  color: white;
+  float: left;
+}
+.video-full {
+  float: right;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.video-volume {
+  float: right;
+  display: flex;
+  align-items: center;
+  height: 22px;
+  line-height: 22px;
+  color: white;
+}
+.video-volprogress {
+  position: relative;
+  height: 4px;
+  width: 200px;
+  background: #222223;
+  margin-left: 10px;
+}
+
+.video-volprogress-now {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: #ff6a03;
+  z-index: 1;
+}
+.video-volprogress-bar {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}

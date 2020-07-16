@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "iconfont";
+  src: url("./iconfont/iconfont.eot?=1594731901547");
+  src: url("./iconfont/iconfont.eot?t=1594731901547#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAQ4AAsAAAAACOgAAAPsAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDSAqEXIN1ATYCJAMYCw4ABCAFhG0HVRuoBxEVnK/JvjiwHdGgJcdxJB0oXbfFRz+Uks59DgJ6r3cWSXPJg1TBh0Lgv6wAYCITSV23we37rVkJjImqW5S17d159As/S0Mvkzm4uDRNaxaQuhaLS6uFSrOjTCgcDlCASunfuvA/yPML6muYd5nYDsLLhyEAmwS5iEpVarmx0LBRAhDdOndsjVUyoXsKBRYCs2WhRszCwJKT5RlgZvzz4jUFskBiKNjEeh0qt6PcM15tUaP+j2oWohCv5wCUZaCAXECDGNbqGoBKU7kobOsvaGoAflhI9DOeOc8KPGv4asv//yUZ8wn8+L88UGgkBgKECfL9AKglpg14hm9AWWoHBjTUBWBAQt0QXBjwaovksnTmigP8gR1wD0bLpatEIzAQWrvoupAIHRUUETXQ0baf4eiBOO7SPhzRzFvKY8dOu4OQUp6y3sbu9Gts39B2h67l2SKMlZeLTs3e/vDVXIu6OlM3R+tRm9LsKRHeBTFNlkb6FkY6brf0dL14ddSVevOa9DkWKNedvD76WpkFoyNzLpzabep85Kh5tj1lgVCjFzrdN4+hZ83b4N45Oo9yad8OC/YtC2/fbt7y/ZEd288/uDKiQ8eFKw6EeTZvcW/xuoOJjPxUbvLy5YtXL59c7nPZoatT0vLVVd+/lzuwp9znz818D9VXsbxBWNxkNcV+zgtFi9QNnONK7GUvXpU0SrqkWEDddqv48T8uuH/QjmCfSPLb8Pv0K0mezsQlC3clZe96co70NuqUULjopEVFJ1f2BHvudhDewTk696PunTsEe+96Qs62dx1z5fAdOa0zwrZnrPGRx+NruhNqHvPgOdNB+j63etwhdFTHYMx9WVlvFy+6nz2LJ+4tXvwuiwXfL9n8rpx7f9HitwwDuynkFgA1SH75r/arBDDslAJA9ZNvf4rfoTo3CrcMLPXVcjQAtwueGx6H/mvmpS0kjBb/AuKRNdqWMrOpTWR/KwRg0ggDAAnYvAFevC/EvbU84cgdAksVAyTZiAeFRRpa43OBgUMhMLEoCzY5VV3uEKoPCqFdQA7jCQRBdoIkgJOgCHIWrfF3wSDCWzAJSoGNV4Ru6CC6ienyEDSKntp/mjrv2LPqJSl8x5BMI0VpzPiGxClKVV5Ws29wkDWmxJ+hVmVi8ZZe6TgY4ymIn9FpPqqGe1Fw2yvlnberCw9Bo+iJ9p+YOu84bK6X2ve/Y0imkR5Ei/cbEqf2iYqccgT6TeVGIZ7lPvFnqFFlgsVb4pUcMDzlidDeb0anOeOMRLhTCPV4rCrfX2Pvcgtgw57QFNNqd7o9+15NirhyMiaLnQBuF0zzf/BJg1ex74yPWK0A")
+      format("woff2"),
+    url("./iconfont/iconfont.woff?t=1594731901547") format("woff"),
+    url("./iconfont/iconfont.ttf?t=1594731901547") format("truetype"),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+      url("./iconfont/iconfont.svg?t=1594731901547#iconfont") format("svg"); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pause:before {
+  content: "\eaaa";
+}
+
+.icon-full-screen:before {
+  content: "\e632";
+}
+
+.icon-play:before {
+  content: "\e600";
+}
+
+.icon-output:before {
+  content: "\e60b";
+}
+
+.icon-close:before {
+  content: "\e653";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+/* 解决图片和容器的空隙问题 */
+img {
+  display: block;
+}
+html {
+  display: table;
+  min-width: 100vw;
+}
+body {
+  height: 2000px;
+  position: relative;
+  background: #f5f5f5;
+}
+
+/* 清除浮动 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#list {
+  width: 1226px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+#list .list-wrap li {
+  float: left;
+  width: 296px;
+  height: auto;
+  margin-right: 14px;
+  background: white;
+  cursor: pointer;
+}
+#list .list-wrap li:last-child {
+  margin-right: 0;
+}
+#list .list-wrap li:hover i {
+  background: #ff6700;
+}
+#list .list-wrap div {
+  position: relative;
+}
+#list .list-wrap img {
+  width: 100%;
+  height: 100%;
+}
+#list .list-wrap i {
+  position: absolute;
+  bottom: 10px;
+  left: 19px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 12px;
+  /* 设置上下相同的padding可以实现居中 */
+  padding: 4px 10px;
+}
+#list .list-wrap h3 {
+  font-size: 12px;
+  text-align: center;
+  padding: 30px 0;
+}
